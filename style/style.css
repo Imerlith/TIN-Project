@@ -1,0 +1,439 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr 4fr 1fr;
+    font-family: Montserrat;
+
+}
+
+.main-title {
+    font-size: 50px;
+    color: red;
+    grid-column: 2 / span 3;
+    grid-row: 1;
+    text-align: center;
+}
+
+.page-content {
+    font-size: 20px;
+    color:coral;
+    grid-column: 1 / 6;
+    grid-row: 2/ 6;
+}
+
+.page-content .bench {
+    grid-column: 1/6;
+    grid-row: 2;
+    background-color: darkslategray;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 50px;
+}
+
+.page-content .bench .login-link {
+   grid-column: 3/3;
+   font-size: 20px;
+   text-decoration: none;
+   color: antiquewhite;
+
+}
+
+.page-content .bench .login-link:hover {
+   text-decoration: underline;
+   color: gold;
+}
+
+.page-content .nav-links {
+
+    text-align: center;
+    font-size: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.page-content .nav-links a {
+    text-decoration: none;
+    font-size: 50px;
+    font-style: oblique;
+    color: coral;
+}
+
+.page-content .nav-links .home-link {
+    grid-column: 1 ;
+    grid-row: 1;
+
+}
+
+.page-content .nav-links .stations-link {
+    grid-column:2;
+    grid-row: 1;
+
+}
+
+.page-content .nav-links .about-link {
+    grid-column: 3;
+    grid-row: 1;
+
+}
+
+.page-content .nav-links a:hover {
+    color:red;
+    text-decoration: underline;
+}
+
+
+.page-content .last-event {
+    grid-column: 3 / 3;
+    grid-row: 4 /4 ;
+    font-size: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-style: oblique;
+}
+
+.page-content .last-event p {
+    grid-column: 2;
+    text-align: center;
+}
+
+
+.page-content .index-photo-galery {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.page-content .index-photo-galery .mphoto { grid-column: 2;
+    grid-column: 2;
+}
+
+.page-content .index-photo-galery .arrow-left { grid-column: 2;
+    grid-column: 1;
+}
+
+.page-content .index-photo-galery .arrow-rigth { grid-column: 2;
+    grid-column: 3;
+}
+
+.reserved {
+    font-size: 15px;
+    color:lightgray;
+    text-align: center;
+    grid-column: 3 / 3;
+    grid-row: 6 / 6;
+}
+
+/* Login page */
+
+.page-content .please {
+    text-align: center;
+    font-size: 40px;
+}
+
+.page-content .login-form {
+    text-align: center;
+    font-size: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+
+}
+
+.page-content .login-form .label-login {
+    grid-column: 1/1;
+    grid-row: 1/1;
+}
+
+.page-content .login-form .login-box {
+    grid-column: 2/2;
+    grid-row: 1/1;
+    font-size: 30px;
+}
+
+.page-content .login-form .label-pass {
+    grid-column: 1/1;
+    grid-row: 3/3;
+}
+
+.page-content .login-form .pass-box {
+    grid-column: 2/2;
+    grid-row: 3/3;
+    font-size: 30px;
+}
+
+.page-content .login-form .sub-btn {
+    grid-column: 2/2;
+    grid-row: 5/5;
+    font-size: 30px;
+}
+
+.page-content .noacc {
+    text-align: right;
+}
+
+/* Register  */
+
+.page-content .register-form {
+    text-align: center;
+    font-size: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+}
+
+.page-content .register-form .label-login {
+    grid-column: 1/1;
+    grid-row: 1/1;
+}
+
+.page-content .register-form .login-box {
+    grid-column: 2/2;
+    grid-row: 1/1;
+    font-size: 30px;
+}
+
+.page-content .register-form .label-pass {
+    grid-column: 1/1;
+    grid-row: 3/3;
+}
+
+.page-content .register-form .pass-box {
+    grid-column: 2/2;
+    grid-row: 3/3;
+    font-size: 30px;
+}
+
+.page-content .register-form .passre-box {
+    grid-column: 2/2;
+    grid-row: 5/5;
+    font-size: 30px;
+}
+
+.page-content .register-form .label-passre {
+    grid-column: 1/1;
+    grid-row: 5/5;
+}
+
+.page-content .register-form .label-email {
+    grid-column: 4/4;
+    grid-row: 1/1;
+}
+
+.page-content .register-form .email-box {
+    grid-column: 5/5;
+    grid-row: 1/1;
+    font-size: 30px;
+}
+.page-content .register-form .label-fname {
+    grid-column: 4/4;
+    grid-row: 3/3;
+}
+
+.page-content .register-form .fname-box {
+    grid-column: 5/5;
+    grid-row: 3/3;
+    font-size: 30px;
+}
+.page-content .register-form .label-lname {
+    grid-column: 4/4;
+    grid-row: 5/5;
+}
+
+.page-content .register-form .lname-box {
+    grid-column: 5/5;
+    grid-row: 5/5;
+    font-size: 30px;
+}
+
+.page-content .register-form .sub-btn {
+    grid-column: 3/3;
+    grid-row: 7/7;
+    font-size: 30px;
+}
+
+/* Main */
+
+.page-content .main-buttons {
+    text-align: center;
+    font-size: 100px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
+    font-family: Montserrat;
+}
+
+.page-content .main-buttons .lsessions {
+    font-size: 100px;
+    grid-column: 2/2;
+}
+
+.page-content .main-buttons .csessions {
+    font-size: 100px;
+    grid-column: 4/4;
+}
+
+/* Prices */
+
+.page-content .pr-table {
+    text-align: center;
+    font-size: 100px;
+    display: grid;
+}
+
+.page-content .pr-table th, td {
+    border: 1px solid gray;
+}
+
+.page-content .pr-table th {
+    background-color: beige;
+}
+
+/* About us  */
+
+.page-content .about-info {
+    text-align: center;
+    font-size: 30px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.page-content .about-info .au-hours {
+    grid-column: 1/1;
+    grid-row: 1/1;
+}
+
+.page-content .about-info .au-street {
+    grid-column: 3/3;
+    grid-row: 1/1;
+}
+
+.page-content .about-info .au-street-value {
+    grid-column: 4/4;
+    grid-row: 1/1;
+}
+
+.page-content .about-info .au-city {
+    grid-column: 3/3;
+    grid-row: 2/2;
+}
+
+.page-content .about-info .au-city-value {
+    grid-column: 4/4;
+    grid-row: 2/2;
+}
+
+.page-content .about-info .au-zip {
+    grid-column: 3/3;
+    grid-row: 3/3;
+}
+.page-content .about-info .au-zip-value {
+    grid-column: 4/4;
+    grid-row: 3/3;
+}
+.page-content .about-info .au-mon {
+    grid-column: 1/1;
+    grid-row: 2/2;
+}
+.page-content .about-info .au-sat {
+    grid-column: 1/1;
+    grid-row: 3/3;
+}
+
+.page-content .about-info .au-phone {
+    grid-column: 1/1;
+    grid-row: 5/5;
+}
+.page-content .about-info .au-phone-value {
+    grid-column: 2/2;
+    grid-row: 5/5;
+}
+
+.page-content .about-info .au-email {
+    grid-column: 1/1;
+    grid-row: 6/6;
+}
+
+.page-content .about-info .au-email-value {
+    grid-column: 2/2;
+    grid-row: 6/6;
+}
+
+/* Avaliable stations */
+.page-content .calen {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.month {
+    padding: 70px 25px;
+    width: 80vw;
+    background: #1abc9c;
+    text-align: center;
+    grid-column: 2/2;
+  }
+  
+  /* Month list */
+  .month ul {
+    margin: 0;
+    padding: 0;
+    grid-column: 2/2;
+  }
+  
+  .month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  
+  /* Previous button inside month header */
+  .month .prev {
+    float: left;
+    padding-top: 10px;
+  }
+  
+  /* Next button */
+  .month .next {
+    float: right;
+    padding-top: 10px;
+  }
+  
+  /* Weekdays (Mon-Sun) */
+  .weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color:#ddd;
+    grid-column: 2/2;
+  }
+  
+  .weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+  }
+  
+  /* Days (1-31) */
+  .days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+    grid-column: 2/2;
+  }
+  
+  .days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+  }
+  
+  /* Highlight the "current" day */
+  .days li .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: white !important
+  }
