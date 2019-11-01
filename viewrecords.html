@@ -17,41 +17,57 @@
             <p class="breadcrumbs">Home > Login > View Records</p>
         </div>
         <style type="text/css">
-            .tg  {border-collapse:collapse;border-spacing:0;}
-            .tg td{font-family:Arial, sans-serif;font-size:50px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-            .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-            .tg .tg-0lax{text-align:left;vertical-align:top}
+            .tg  {border-collapse:collapse;border-spacing:0;grid-column: 2/4;grid-row: 2/2;}
+            .tg td{font-size:2rem;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+            .tg th{color:red;font-size:2rem;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+            .tg .tg-0lax{text-align:center;vertical-align:middle}
             </style>
-            <table class="tg">
-              <tr>
-                <th class="tg-0lax">ID</th>
-                <th class="tg-0lax">Date</th>
-                <th class="tg-0lax">Hours</th>
-                <th class="tg-0lax">Client</th>
-                <th class="tg-0lax">Employees</th>
-              </tr>
-              <tr>
-                <td class="tg-0lax">1</td>
-                <td class="tg-0lax">10.01.1234</td>
-                <td class="tg-0lax">3</td>
-                <td class="tg-0lax">Jan Kowalski</td>
-                <td class="tg-0lax">Jakub Dzięciątko</td>
-              </tr>
-              <tr>
-                <td class="tg-0lax">2</td>
-                <td class="tg-0lax">10.02.2345</td>
-                <td class="tg-0lax">2</td>
-                <td class="tg-0lax">Paweł Kalbarczyk</td>
-                <td class="tg-0lax">Adam Nowak</td>
-              </tr>
-              <tr>
-                <td class="tg-0lax">3</td>
-                <td class="tg-0lax">10.03.1234</td>
-                <td class="tg-0lax">1</td>
-                <td class="tg-0lax">Wiktor Androsiuk</td>
-                <td class="tg-0lax">Przemysław Gołębski</td>
-              </tr>
-            </table>
+            <div class="view-records-table">
+              <table class="tg">
+                <tr>
+                  <th class="tg-0lax">ID</th>
+                  <th class="tg-0lax">Select</th>
+                  <th class="tg-0lax">Date</th>
+                  <th class="tg-0lax">Hours</th>
+                  <th class="tg-0lax">Client</th>
+                  <th class="tg-0lax">Employees</th>
+                  <th class="tg-0lax">Actions</th>
+                </tr>
+                <tr>
+                  <td class="tg-0lax">1</td>
+                  <td class="tg-0lax"><input type="checkbox"></td>
+                  <td class="tg-0lax">10.01.1234</td>
+                  <td class="tg-0lax">3</td>
+                  <td class="tg-0lax">Jan Kowalski</td>
+                  <td class="tg-0lax">Jakub Dzięciątko</td>
+                  <td class="tg-0lax"><a href="view.html">View</a> <a href="edit.html">Edit</a> <a href="del.html">Del</a> </td>
+                </tr>
+                <tr>
+                  <td class="tg-0lax">2</td>
+                  <td class="tg-0lax"><input type="checkbox"></td>
+                  <td class="tg-0lax">10.02.2345</td>
+                  <td class="tg-0lax">2</td>
+                  <td class="tg-0lax">Paweł Kalbarczyk</td>
+                  <td class="tg-0lax">Adam Nowak</td>
+                  <td class="tg-0lax"><a href="view.html">View</a> <a href="edit.html">Edit</a> <a href="del.html">Del</a> </td>
+                </tr>
+                <tr>
+                  <td class="tg-0lax">3</td>
+                  <td class="tg-0lax"><input type="checkbox"></td>
+                  <td class="tg-0lax">10.03.1234</td>
+                  <td class="tg-0lax">1</td>
+                  <td class="tg-0lax">Wiktor Androsiuk</td>
+                  <td class="tg-0lax">Przemysław Gołębski</td>
+                  <td class="tg-0lax"><a href="view.html">View</a> <a href="edit.html">Edit</a> <a href="del.html">Del</a> </td>
+                </tr>
+              </table>
+              <div class="view-records-nav">
+                <b>Page: 1 / 2</b>
+                <a href="previeus.html">Previous</a>
+                <a href="next.html">Next</a>
+                <a href="first.html">First</a>
+              </div>
+            </div>
         </div>
     <div class = "reserved">
         4FunGameplay 2019. All rights reserved.
