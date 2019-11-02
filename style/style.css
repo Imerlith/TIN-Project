@@ -363,72 +363,90 @@ footer {
 /* About us  */
 
 .page-content .about-info {
-    text-align: center;
-    font-size: 30px;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr 2fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-rows: 1fr 8fr 1fr;
+}
+
+.page-content .about-info .about-container {
+    text-align: center;
+    font-size: 1.7rem;
+    grid-row: 2/2;
+    grid-column: 2/2;
+    display: grid;
+    background-color:#1b1b1b;
+    border-radius: 20px;
+    grid-template-columns:1fr auto auto auto auto 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.page-content .about-info .about-container .info-label {
+    text-decoration:underline #9a0007;
+}
+
+.page-content .about-info .about-container .info-value {
+    border: #424242 1px solid;
 }
 
 .page-content .about-info .au-hours {
-    grid-column: 1/1;
-    grid-row: 1/1;
+    grid-column: 2/2;
+    grid-row: 2/2;
 }
 
 .page-content .about-info .au-street {
-    grid-column: 3/3;
-    grid-row: 1/1;
+    grid-column: 4/4;
+    grid-row: 2/2;
 }
 
 .page-content .about-info .au-street-value {
-    grid-column: 4/4;
-    grid-row: 1/1;
+    grid-column: 5/5;
+    grid-row: 2/2;
 }
 
 .page-content .about-info .au-city {
-    grid-column: 3/3;
-    grid-row: 2/2;
+    grid-column: 4/4;
+    grid-row: 3/3;
 }
 
 .page-content .about-info .au-city-value {
-    grid-column: 4/4;
-    grid-row: 2/2;
+    grid-column: 5/5;
+    grid-row: 3/3;
 }
 
 .page-content .about-info .au-zip {
-    grid-column: 3/3;
-    grid-row: 3/3;
+    grid-column: 4/4;
+    grid-row: 4/4;
 }
 .page-content .about-info .au-zip-value {
-    grid-column: 4/4;
-    grid-row: 3/3;
+    grid-column: 5/5;
+    grid-row: 4/4;
 }
 .page-content .about-info .au-mon {
-    grid-column: 1/1;
-    grid-row: 2/2;
+    grid-column: 2/2;
+    grid-row: 3/3;
 }
 .page-content .about-info .au-sat {
-    grid-column: 1/1;
-    grid-row: 3/3;
+    grid-column: 2/2;
+    grid-row: 4/4;
 }
 
 .page-content .about-info .au-phone {
-    grid-column: 1/1;
-    grid-row: 5/5;
+    grid-column: 2/2;
+    grid-row: 6/6;
 }
 .page-content .about-info .au-phone-value {
-    grid-column: 2/2;
-    grid-row: 5/5;
+    grid-column: 3/3;
+    grid-row: 6/6;
 }
 
 .page-content .about-info .au-email {
-    grid-column: 1/1;
-    grid-row: 6/6;
+    grid-column: 2/2;
+    grid-row: 7/7;
 }
 
 .page-content .about-info .au-email-value {
-    grid-column: 2/2;
-    grid-row: 6/6;
+    grid-column: 3/3;
+    grid-row: 7/7;
 }
 
 /* Avaliable stations */
