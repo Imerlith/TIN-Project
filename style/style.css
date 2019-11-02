@@ -189,29 +189,42 @@ footer {
 
 /* Login page */
 
-.page-content .please {
-    text-align: center;
-    font-size: 40px;
+.page-content .login-container {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: 1fr 1fr 4fr 1fr;
 }
 
-.page-content .login-form {
+.page-content .login-container .please {
     text-align: center;
-    font-size: 40px;
+    font-size:2.8rem;
+    grid-row: 2/2;
+    grid-column: 2/2;
+    color: #1b1b1b;
+}
+
+.page-content .login-container .login-form {
+    color: #1b1b1b;
+    text-align: center;
+    font-size: 2.3rem;
+    grid-row: 3/3;
+    grid-column: 2/2;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
 
 }
 
 .page-content .login-form .label-login {
     grid-column: 1/1;
     grid-row: 1/1;
+    height: 2rem;
 }
 
 .page-content .login-form .login-box {
     grid-column: 2/2;
     grid-row: 1/1;
-    font-size: 30px;
+    font-size: 2rem;
 }
 
 .page-content .login-form .label-pass {
@@ -222,17 +235,38 @@ footer {
 .page-content .login-form .pass-box {
     grid-column: 2/2;
     grid-row: 3/3;
-    font-size: 30px;
+    font-size: 2rem;
 }
 
 .page-content .login-form .sub-btn {
     grid-column: 2/2;
     grid-row: 5/5;
-    font-size: 30px;
+    font-size: 2rem;
+    background-color:#8B8B8B;
+    color: antiquewhite;
 }
 
-.page-content .noacc {
+.page-content .login-form .sub-btn:hover {
+    background-color:#8B8B8B;
+    color: #9a0007;
+}
+
+.page-content .login-container .noacc {
     text-align: right;
+    color: #1b1b1b;
+    grid-column: 3/3;
+    grid-row: 4/4;
+    font-size: 1.2rem;
+}
+
+.page-content .login-container .noacc a {
+    color: #9a0007;
+    text-decoration: none;
+}
+
+.page-content .login-container .noacc a:hover {
+    color: #9a0007;
+    text-decoration: overline #001970 ;
 }
 
 /* Register  */
@@ -382,6 +416,7 @@ footer {
 
 .page-content .about-info .about-container .info-label {
     text-decoration:underline #9a0007;
+    text-align: left;
 }
 
 .page-content .about-info .about-container .info-value {
