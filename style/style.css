@@ -1,14 +1,18 @@
+
 body {
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
-    grid-template-rows: auto 1fr 1fr 1fr 4fr 1fr;
-    font-family: Montserrat;
-
+    grid-template-rows: auto 1fr  1fr 4fr auto;
+    /* font-family: Montserrat; */
+    font-family:'Fredoka One', cursive;
+    -webkit-font-smoothing: antialiased;
+    background-color: antiquewhite;
+    color: antiquewhite;
 }
 
 .main-title {
     font-size: 2.7rem;
-    color: red;
+    color: #9a0007;
     grid-column: 2 / span 3;
     grid-row: 1;
     text-align: center;
@@ -16,37 +20,45 @@ body {
 
 .page-content {
     font-size: 1.25rem;
-    color:coral;
     grid-column: 1 / 6;
-    grid-row: 2/ 6;
+    grid-row: 2/ 5;
 }
 
 .page-content .bench {
     grid-column: 1/6;
     grid-row: 2;
-    background-color: darkslategray;
+    background-color: #6d6d6d;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr auto 1fr;
     height: 50px;
+    border-radius: 25px;
 }
 
 .page-content .bench .login-link {
    grid-column: 3/3;
-   font-size: 1.25rem;
+   font-size: 2.5rem;
    text-decoration: none;
+   text-align: center;
    color: antiquewhite;
 
 }
 
 .page-content .bench .login-link:hover {
    text-decoration: underline;
-   color: gold;
+   color: #001970;
+}
+
+.page-content .bench .breadcrumbs {
+    color: antiquewhite;
+    font-size: 2.5rem;
+    text-align: center;
 }
 
 .page-content .nav-links {
-
     text-align: center;
     font-size: 1.8rem;
+    grid-column: 2/2;
+    grid-row: 1/1;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -54,14 +66,12 @@ body {
 .page-content .nav-links a {
     text-decoration: none;
     font-size: 2.5rem;
-    font-style: oblique;
-    color: coral;
+    color: antiquewhite;
 }
 
 .page-content .nav-links .home-link {
     grid-column: 1 ;
     grid-row: 1;
-
 }
 
 .page-content .nav-links .stations-link {
@@ -77,7 +87,7 @@ body {
 }
 
 .page-content .nav-links a:hover {
-    color:red;
+    color:#001970;
     text-decoration: underline;
 }
 
@@ -88,7 +98,7 @@ body {
     font-size: 40px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    font-style: oblique;
+    color: #1b1b1b;
 }
 
 .page-content .last-event p {
@@ -100,30 +110,49 @@ body {
 .page-content .index-photo-galery {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr 40fr 1fr;
 }
 
 .page-content .index-photo-galery .mphoto {
     grid-column: 2;
+    grid-row: 2;
 }
 
 .page-content .index-photo-galery .index-left-container {
     grid-column: 1;
+    grid-row: 2;
     display: grid;
     grid-template-rows: 1fr auto 1fr;
+    grid-template-columns:1fr 1fr auto ;
 }
 
 .page-content .index-photo-galery .index-left-container .arrow-left {
+    width: 3rem;
+    height: 3rem;
     grid-row: 2/2;
+    grid-column: 3/3;
 }
 
 .page-content .index-photo-galery .index-rigth-container {
     grid-column: 3;
+    grid-row: 2;
     display: grid;
     grid-template-rows: 1fr auto 1fr;
 }
 
 .page-content .index-photo-galery .index-rigth-container .arrow-rigth {
-    grid-row: 2;
+    grid-row: 2/2;
+    width: 3rem;
+    height: 3rem;
+}
+
+footer {
+    grid-column: 1/6;
+    grid-row: 6/6;
+    background-color:#F4F4F4;
+    color:#8B8B8B;
+    text-align: center;
+    opacity: 1;
 }
 
 .reserved {
