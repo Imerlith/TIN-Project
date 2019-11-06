@@ -652,10 +652,32 @@ footer {
 
   .page-content .view-records-container {
       display: grid;
-      grid-template-rows: 1fr auto 1fr;
+      grid-template-rows: auto auto 1fr;
       grid-template-columns: 1fr auto 1fr;
       color: #1b1b1b;
 
+  }
+
+  .page-content .back-container {
+      grid-column: 1/1;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .page-content .back-container .view-back {
+      grid-column: 2/2;
+      background-color:#8B8B8B;
+      font-size: 2rem;
+      border-radius: 25px;
+
+    color: antiquewhite;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .page-content .view-records-table {
