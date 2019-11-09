@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="style/style.css">
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
     <title>Command Center Register</title>
+    <script defer src ="scripts/validate.js"></script>
 </head>
 <body>
     <div class = "main-title">
@@ -23,21 +24,24 @@
         </div>
         <div class="register-form-container">
             <p class="please">Please fill out this form</p>
-            <form class="register-form" method="GET">
+            <form class="register-form" id="register-form" method="GET" >
                 <label for="login-in" class="label-login">Login</label>
-                <input id="login-in"  class="login-box" type="text"></br>
+                <input id="login-in"  class="login-box" name="login-box" type="text" ></br>
                 <label for="password-in"  class="label-pass">Password</label>
-                <input id="password-in" type="password"  class="pass-box"></br>
+                <input id="password-in" type="password"  class="pass-box" ></br>
                 <label for="password-re"  class="label-passre">Reenter Password</label>
-                <input id="password-re" type="password"  class="passre-box"></br>
+                <input id="password-re" type="password"  class="passre-box" ></br>
                 <label for="email-in" class="label-email">Email</label>
-                <input id="email-in"  class="email-box" type="text"></br>
+                <input id="email-in"  class="email-box" type="text" ></br>
                 <label for="fname-in" class="label-fname">First Name</label>
-                <input id="fname-in"  class="fname-box" type="text"></br>
+                <input id="fname-in"  class="fname-box" type="text" ></br>
                 <label for="lname-in" class="label-lname">Last Name</label>
-                <input id="lname-in"  class="lname-box" type="text"></br>
-                <a class="sub-btn" type="submit" value="Submit" href="login.html" > Submit</a>
+                <input id="lname-in"  class="lname-box" type="text" ></br>
+                <input type="submit" class="sub-btn" value="Submit">
             </form>
+        </div>
+        <div id="error">
+
         </div>
         <footer>
         <p>Created by: s16540</p>

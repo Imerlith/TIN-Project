@@ -244,7 +244,6 @@ footer {
     font-size: 2rem;
     background-color:#8B8B8B;
     color: antiquewhite;
-    color: antiquewhite;
     -webkit-appearance: button;
     -moz-appearance: button;
     appearance: button;
@@ -375,11 +374,7 @@ footer {
     font-size: 30px;
     background-color:#8B8B8B;
     color: antiquewhite;
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-
-    text-decoration: none;
+    border-radius: 25px;
 
 }
 
@@ -889,4 +884,8 @@ footer {
         grid-column: 2/2;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #error {
+        color: #1b1b1b;
     }
