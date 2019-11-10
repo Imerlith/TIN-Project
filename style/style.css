@@ -886,6 +886,10 @@ footer {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    #error {
-        color: #1b1b1b;
+    .page-content .register-form-container .error-summary {
+        color: #9a0007;
+        font-size: 1.5rem;
+        grid-row: 6/6;
+        grid-column: 3/4;
+        text-align: center;
     }
