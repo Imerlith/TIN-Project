@@ -23,38 +23,57 @@ form.addEventListener('submit', (e)=> {
     }
 })
 
-
+function addErrorMessageToField(message, fieldId) {
+    let boldText = document.createElement('b')
+    boldText.appendChild(document.createTextNode(message))
+    document.getElementById(fieldId).appendChild(boldText)
+}
 
 function checkForNullOrEmpty() {
     if (login.value === '' || login.value == null) {
-        messages.push("Login can't be empty")
+        let message = "Login can't be empty"
+        addErrorMessageToField(message,'login-error')
+        messages.push(message)
         login.style.border = "solid 1px red"
     }
     if (password.value === '' || password.value == null) {
-        messages.push("Please provide password")
+        let message = "Please provide password"
+        addErrorMessageToField(message,'password-error')
+        messages.push(message)
         password.style.border = "solid 1px red"
     }
     if (repassword.value === '' || repassword.value == null) {
-        messages.push("Please repeat password")
+        let message = "Please repeat password"
+        addErrorMessageToField(message,'repassword-error')
+        messages.push(message)
         repassword.style.border = "solid 1px red"
     }
     if (email.value === '' || email.value == null) {
-        messages.push("Email can't be empty")
+        let message = "Email can't be empty"
+        addErrorMessageToField(message, 'email-error')
+        messages.push(message)
         email.style.border = "solid 1px red"
     }
     if (fname.value === '' || fname.value == null) {
-        messages.push("First name can't be empty")
+        let message = "First name can't be empty"
+        addErrorMessageToField(message, 'fname-error')
+        messages.push(message)
         fname.style.border = "solid 1px red"
     }
     if (lname.value === '' || lname.value == null) {
-        messages.push("Last name can't be empty")
+        let message = "Last name can't be empty"
+        addErrorMessageToField(message, 'lname-error')
+        messages.push(message)
         lname.style.border = "solid 1px red"
     }
 }
 
 function checkForNotEqualPasswords() {
-    if (password.value != repassword.value) {
-        messages.push('Passwords missmatch. Please make sure you type same password')
+    if (password.value != repassword.value ) {
+        let message = 'Passwords missmatch'
+        addErrorMessageToField(message, 'password-error')
+        addErrorMessageToField(message, 'repassword-error')
+        messages.push(message)
         password.style.border = "solid 1px red"
         repassword.style.border = "solid 1px red"
     }
@@ -62,7 +81,10 @@ function checkForNotEqualPasswords() {
 
 function checkForWeakPassword() {
     if (password.value.length <= 6 && password.value != '') {
-        messages.push('Please provide a stronger password')
+        let message = 'Please provide a stronger password'
+        addErrorMessageToField(message, 'password-error')
+        addErrorMessageToField(message, 'repassword-error')
+        messages.push(message)
         password.style.border = "solid 1px red"
         repassword.style.border = "solid 1px red"
     }
@@ -78,6 +100,7 @@ function checkIfLoginIsReserved() {
 
 function resetStylesForRegister() {
     error.innerText = ""
+    resetErrorLabels()
     messages = []
     login.style.border = "1px solid "
     password.style.border = "1px solid black"
@@ -85,6 +108,15 @@ function resetStylesForRegister() {
     email.style.border = "1px solid black"
     fname.style.border = "1px solid black"
     lname.style.border = "1px solid black"
+}
+
+function resetErrorLabels() {
+    document.getElementById('login-error').innerHTML = ''
+    document.getElementById('password-error').innerHTML = ''
+    document.getElementById('repassword-error').innerHTML = ''
+    document.getElementById('email-error').innerHTML = ''
+    document.getElementById('fname-error').innerHTML = ''
+    document.getElementById('lname-error').innerHTML = ''
 }
 
 function createDisplayedErrors(errors) {
