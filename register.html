@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,14 @@
     <link rel="stylesheet" type="text/css" href="style/style.css">
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
     <title>Command Center Register</title>
-    <script defer src ="scripts/validate.js"></script>
+    <script defer src="scripts/validateRegister.js"></script>
 </head>
+
 <body>
-    <div class = "main-title">
+    <div class="main-title">
         <h1>Command Center</h1>
     </div>
-    <div class = "page-content">
+    <div class="page-content">
         <div class="bench">
             <b class="breadcrumbs">Home > Login > Register</b>
             <div class="nav-links">
@@ -24,31 +26,32 @@
         </div>
         <div class="register-form-container">
             <p class="please">Please fill out this form</p>
-            <form class="register-form" id="register-form" method="GET" >
+            <form class="register-form" id="register-form" method="GET">
                 <label for="login-in" class="label-login">Login</label>
-                <input id="login-in"  class="login-box" name="login-box" type="text" ></br>
-                <label for="password-in"  class="label-pass">Password</label>
-                <input id="password-in" type="password"  class="pass-box" ></br>
-                <label for="password-re"  class="label-passre">Reenter Password</label>
-                <input id="password-re" type="password"  class="passre-box" ></br>
+                <input id="login-in" class="login-box" name="login-box" type="text"></br>
+                <label for="password-in" class="label-pass">Password</label>
+                <input id="password-in" type="password" class="pass-box"></br>
+                <label for="password-re" class="label-passre">Reenter Password</label>
+                <input id="password-re" type="password" class="passre-box"></br>
                 <label for="email-in" class="label-email">Email</label>
-                <input id="email-in"  class="email-box" type="email" ></br>
+                <input id="email-in" class="email-box" type="email"></br>
                 <label for="fname-in" class="label-fname">First Name</label>
-                <input id="fname-in"  class="fname-box" type="text" ></br>
+                <input id="fname-in" class="fname-box" type="text"></br>
                 <label for="lname-in" class="label-lname">Last Name</label>
-                <input id="lname-in"  class="lname-box" type="text" ></br>
+                <input id="lname-in" class="lname-box" type="text"></br>
                 <input type="submit" class="sub-btn" value="Submit">
-                <div id="error" class="error-summary">
-                </div>
             </form>
-
+            <div class="errors-cointainer">
+                <div id="error" class="error-summary"></div>
+            </div>
         </div>
         <footer>
-        <p>Created by: s16540</p>
-        <p>
-            Contact information: <a href="mailto:s16540@pjwstk.edu.pl">
-                s16540@pjwstk.edu.pl</a>.
-        </p>
-    </footer>
+            <p>Created by: s16540</p>
+            <p>
+                Contact information: <a href="mailto:s16540@pjwstk.edu.pl">
+                    s16540@pjwstk.edu.pl</a>.
+            </p>
+        </footer>
 </body>
+
 </html>

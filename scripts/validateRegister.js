@@ -19,7 +19,7 @@ form.addEventListener('submit', (e)=> {
 
     if(messages.length > 0) {
         e.preventDefault()
-        error.innerText = messages.join(', ')
+        createDisplayedErrors(messages)
     }
 })
 
@@ -27,7 +27,7 @@ form.addEventListener('submit', (e)=> {
 
 function checkForNullOrEmpty() {
     if (login.value === '' || login.value == null) {
-        messages.push("login can't be empty")
+        messages.push("Login can't be empty")
         login.style.border = "solid 1px red"
     }
     if (password.value === '' || password.value == null) {
@@ -55,19 +55,24 @@ function checkForNullOrEmpty() {
 function checkForNotEqualPasswords() {
     if (password.value != repassword.value) {
         messages.push('Passwords missmatch. Please make sure you type same password')
+        password.style.border = "solid 1px red"
+        repassword.style.border = "solid 1px red"
     }
 }
 
 function checkForWeakPassword() {
-    if (password.value.length <= 6) {
+    if (password.value.length <= 6 && password.value != '') {
         messages.push('Please provide a stronger password')
+        password.style.border = "solid 1px red"
+        repassword.style.border = "solid 1px red"
     }
 }
 
 function checkIfLoginIsReserved() {
     let loginsMockup = ['login1', 'login2']
     if (loginsMockup.includes(login.value)) {
-        messages.push('Login already in use. Please choose different login')
+        messages.push('Login already in use. Please choose different a login')
+        login.style.border = "solid 1px red"
     }
 }
 
@@ -80,4 +85,22 @@ function resetStylesForRegister() {
     email.style.border = "1px solid black"
     fname.style.border = "1px solid black"
     lname.style.border = "1px solid black"
+}
+
+function createDisplayedErrors(errors) {
+    let header = document.createElement('p');
+    header.appendChild(document.createTextNode('Please resolve following errors: '))
+    error.appendChild(header)
+    error.appendChild(createListOfErrors(errors))
+}
+
+function createListOfErrors(errors) {
+    let list = document.createElement('ul')
+    for (let i=0; i<messages.length; i++) {
+        let item = document.createElement('li')
+        item.appendChild(document.createTextNode(errors[i]))
+        list.appendChild(item)
+    }
+
+    return list
 }
