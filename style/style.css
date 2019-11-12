@@ -868,6 +868,10 @@ td {
     color: antiquewhite;
     border-radius: 25px;
 }
+.page-content .create-records-container .create-submit:hover {
+    background-color: #8B8B8B;
+    color: #9a0007;
+}
 
 .page-content .create-records-container .create-records-form .cus-lookup-label {
     grid-column: 1/1;
@@ -984,6 +988,11 @@ td {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.page-content .create-records-container .back-link {
+    grid-row: 1/1;
+    grid-column: 3/3;
 }
 
 .center-el {
