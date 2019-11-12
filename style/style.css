@@ -960,8 +960,43 @@ td {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.page-content .create-records-container .create-records-form .cus-error {
+    grid-row: 1/1;
+    grid-column: 3/3;
+}
+
+.page-content .create-records-container .create-records-form .start-hour-error {
+    grid-row: 3/3;
+    grid-column: 3/3;
+}
+
+.page-content .create-records-container .create-records-form .end-hour-error {
+    grid-row: 5/5;
+    grid-column: 3/3;
+}
+
+.page-content .create-records-container .create-records-form .station-error {
+    grid-row: 1/1;
+    grid-column: 6/6;
+}
+
+.page-content .create-records-container .create-records-form .date-error {
+    grid-row: 3/3;
+    grid-column: 6/6;
+}
+
+.page-content .create-records-container .create-records-form .emp-error {
+    grid-row: 5/5;
+    grid-column: 6/6;
+}
+
 .center-el {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.error-dialog {
+    color: #9a0007;
+    font-size: 1rem;
 }

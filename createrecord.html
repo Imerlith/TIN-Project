@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="style/style.css">
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+    <script defer src="scripts/validateSession.js" ></script>
     <title>Command Center</title>
 </head>
 
@@ -26,24 +27,32 @@
         </div>
         <div class="create-records-container">
             <div class="create-records-form">
-                <form>
+                <form id="session-form">
                     <label for="cus-lookup" class="cus-lookup-label center-el">Customer lookup</label>
                     <input id="cus-lookup" class="cus-lookup" type="search" >
+                    <div id="cus-error" class="cus-error center-el error-dialog">aaaaaaaaa</div>
                     <label for="start-hour" class="start-hour-label center-el">Start hour</label>
                     <input id="start-hour" class="start-hour" type="time" >
-                    <label for="end-hour" class="end-hour-label center-el">Start hour</label>
+                    <div id="start-hour-error" class="start-hour-error center-el error-dialog">vvvvvvvvvvvv</div>
+                    <label for="end-hour" class="end-hour-label center-el">End hour</label>
                     <input id="end-hour" class="end-hour" type="time" >
+                    <div id="end-hour-error" class="end-hour-error center-el error-dialog">dddddddd</div>
                     <label for="station-combo" class="station-combo-label center-el">Station</label>
                     <input id="station-combo" class="station-combo" type="text" >
+                    <div id="station-error" class="station-error center-el error-dialog">eeeeeeee</div>
                     <label for="date-picker" class="date-picker-label center-el">Date</label>
                     <input id="date-picker" type="date" class="date-picker">
+                    <div id="date-error" class="date-error center-el error-dialog">ffffffff</div>
                     <label for="emp-lookup" class="emp-lookup-label center-el">Employee lookup</label>
                     <input id="emp-lookup" class="emp-lookup" type="search" >
+                    <div id="emp-error" class="emp-error center-el error-dialog">hhhghhhhh</div>
+                    <input type="submit" class="create-submit" value="Submit">
+            </div>
                 </form>
             </div>
             <div class="create-buttons">
                     <a class="create-back" href="main.html">Back</a>
-                    <a class="create-submit" href="viewrecords.html">Submit</a>
+                    <!-- <input type="submit" class="create-submit" value="Submit"> -->
             </div>
 
         </div>
