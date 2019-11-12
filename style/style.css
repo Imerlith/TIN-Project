@@ -847,8 +847,8 @@ td {
     grid-column: 2/2;
     grid-row: 2/2;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     text-align: center;
     font-size: 1.55rem;
 }
@@ -858,27 +858,15 @@ td {
     grid-row: 3/3;
     background-color: #8B8B8B;
     color: antiquewhite;
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
 }
 
 .page-content .create-records-container .create-submit {
-    grid-column: 1/1;
-    grid-row: 3/3;
+    grid-column: 4/4;
+    grid-row: 7/7;
     background-color: #8B8B8B;
     color: antiquewhite;
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border-radius: 25px;
 }
 
 .page-content .create-records-container .create-records-form .cus-lookup-label {
@@ -915,34 +903,34 @@ td {
 }
 
 .page-content .create-records-container .create-records-form .station-combo-label {
-    grid-column: 4/4;
+    grid-column: 5/5;
     grid-row: 1/1;
 }
 
 .page-content .create-records-container .create-records-form .station-combo {
-    grid-column: 5/5;
+    grid-column: 6/6;
     grid-row: 1/1;
     font-size: 1.5rem;
 }
 
 .page-content .create-records-container .create-records-form .date-picker-label {
-    grid-column: 4/4;
+    grid-column: 5/5;
     grid-row: 3/3;
 }
 
 .page-content .create-records-container .create-records-form .date-picker {
-    grid-column: 5/5;
+    grid-column: 6/6;
     grid-row: 3/3;
     font-size: 1.5rem;
 }
 
 .page-content .create-records-container .create-records-form .emp-lookup-label {
-    grid-column: 4/4;
+    grid-column: 5/5;
     grid-row: 5/5;
 }
 
 .page-content .create-records-container .create-records-form .emp-lookup {
-    grid-column: 5/5;
+    grid-column: 6/6;
     grid-row: 5/5;
     font-size: 1.5rem;
 }
@@ -977,17 +965,25 @@ td {
 
 .page-content .create-records-container .create-records-form .station-error {
     grid-row: 1/1;
-    grid-column: 6/6;
+    grid-column: 7/7;
 }
 
 .page-content .create-records-container .create-records-form .date-error {
     grid-row: 3/3;
-    grid-column: 6/6;
+    grid-column: 7/7;
 }
 
 .page-content .create-records-container .create-records-form .emp-error {
     grid-row: 5/5;
-    grid-column: 6/6;
+    grid-column: 7/7;
+}
+
+.page-content .create-records-container .errors-container {
+    grid-row: 3/3;
+    grid-column: 2/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .center-el {

@@ -6,17 +6,21 @@ const endHour = document.getElementById('end-hour')
 const station = document.getElementById('station-combo')
 const date = document.getElementById('date-picker')
 let messages = []
+const error = document.getElementById('error')
+
 
 form.addEventListener('submit', (e)=> {
     resetStyles()
-    e.preventDefault()
+
     checkForNullOrEmptyFields()
     checkForWrongTime()
     checkForWrongDate()
 
-    // if (messages.length > 0) {
-    //     e.preventDefault()
-    // }
+
+    if (messages.length > 0) {
+        e.preventDefault()
+        createAndDisplayErrorSummary()
+    }
 })
 
 function checkForNullOrEmptyFields() {
@@ -76,7 +80,27 @@ function checkForWrongDate() {
     }
 }
 
+function createAndDisplayErrorSummary() {
+    let header = document.createElement('p');
+    header.appendChild(document.createTextNode('Please resolve following errors: '))
+    error.appendChild(header)
+    error.appendChild(createListOfErrors())
+}
+
+function createListOfErrors() {
+    let list = document.createElement('ul')
+    for (let i=0; i<messages.length; i++) {
+        let item = document.createElement('li')
+        item.appendChild(document.createTextNode(messages[i]))
+        list.appendChild(item)
+    }
+
+    return list
+}
+
 function resetStyles() {
+    messages = []
+    error.innerHTML = ""
     customer.style.border = "solid 1px black"
     employee.style.border = "solid 1px black"
     startHour.style.border = "solid 1px black"
