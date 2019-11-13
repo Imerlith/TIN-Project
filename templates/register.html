@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+    <title>Command Center Register</title>
+    <script defer src="scripts/validateRegister.js"></script>
+</head>
+
+<body>
+    <div class="main-title">
+        <h1>Command Center</h1>
+    </div>
+    <div class="page-content">
+        <div class="bench">
+            <b class="breadcrumbs">Home > Login > Register</b>
+            <div class="nav-links">
+                <a class="home-link" href="prices.html">Prices</a>
+                <a class="stations-link" href="astations.html">Avaliable stations</a>
+                <a class="about-link" href="aboutus.html">About us</a>
+            </div>
+        </div>
+        <div class="register-form-container">
+            <p class="please">Please fill out this form</p>
+            <form class="register-form" id="register-form" method="GET">
+                <label for="login-in" class="label-login center-el">Login</label>
+                <input id="login-in" class="login-box" name="login-box" type="text"></br>
+                <div id="login-error" class="login-error center-el"></div>
+                <label for="password-in" class="label-pass center-el">Password</label>
+                <input id="password-in" type="password" class="pass-box"></br>
+                <div id="password-error" class="password-error center-el"></div>
+                <label for="password-re" class="label-passre center-el">Reenter Password</label>
+                <input id="password-re" type="password" class="passre-box"></br>
+                <div id="repassword-error" class="repassword-error center-el"></div>
+                <label for="email-in" class="label-email center-el">Email</label>
+                <input id="email-in" class="email-box" type="email"></br>
+                <div id="email-error" class="email-error center-el"></div>
+                <label for="fname-in" class="label-fname center-el">First Name</label>
+                <input id="fname-in" class="fname-box" type="text"></br>
+                <div id="fname-error" class="fname-error center-el"></div>
+                <label for="lname-in" class="label-lname center-el">Last Name</label>
+                <input id="lname-in" class="lname-box" type="text"></br>
+                <div id="lname-error" class="lname-error center-el"></div>
+                <input type="submit" class="sub-btn" value="Submit">
+            </form>
+            <div class="errors-cointainer">
+                <div id="error" class="error-summary"></div>
+            </div>
+        </div>
+        <footer>
+            <p>Created by: s16540</p>
+            <p>
+                Contact information: <a href="mailto:s16540@pjwstk.edu.pl">
+                    s16540@pjwstk.edu.pl</a>.
+            </p>
+        </footer>
+</body>
+
+</html>
