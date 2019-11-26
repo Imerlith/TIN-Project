@@ -1,5 +1,22 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  .main-title
+    h1 XxX_G4m3r$_D3nn_XxX
+  .page-content
+    .bench
+      b.breadcrumbs Home &gt; ...
+      a.login-link(href='login.html') Login
+      .nav-links
+        a.home-link(href='prices.html') Prices
+        a.stations-link(href='astations.html') Avaliable stations
+        a.about-link(href='aboutus.html') About us
+    h2.last-event
+      p Last Event
+    .index-photo-galery(src='images/memep3.jpg' alt='last-event-photo')
+      .index-left-container
+        img.arrow-left(src='images/arrowleft.svg' alt='arrow left')
+      img.mphoto(src='images/memep3.jpg' alt='last-event-photo')
+      .index-rigth-container
+        img.arrow-rigth(src='images/arrowright.svg' alt='arrow rigth')
+        
