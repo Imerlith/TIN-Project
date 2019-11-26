@@ -128,13 +128,6 @@ footer {
     height: 100%;
 }
 
-.page-content .login-container .please {
-    text-align: center;
-    font-size: 3.5vh;
-    color: #1b1b1b;
-    margin: 10px;
-}
-
 .page-content .login-container .login-form {
     color: #1b1b1b;
     text-align: center;
