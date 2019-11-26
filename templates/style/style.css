@@ -13,7 +13,7 @@ body {
 }
 
 .main-title {
-    font-size: 2.7rem;
+    font-size: 3.5vw;
     color: #9a0007;
     text-align: center;
 }
@@ -42,11 +42,23 @@ body {
     .page-content .bench {
         display: none;
     }
+    .last-event {
+        font-size: 3.5vh;
+    }
+}
+
+@media (max-width:1000px) {
+    .page-content .bench {
+        font-size: 2.5vw;
+    }
+    .main-title {
+        font-size: 3.5vw;
+    }
 }
 
 .page-content .nav-links {
     width: 100%;
-    font-size: 1.8rem;
+    font-size: 2.5vw;
     display: flex;
     align-items: center;
     justify-content:space-around ;
@@ -54,11 +66,12 @@ body {
 
 .page-content .nav-links li {
     display: inline;
+    padding: 30px;
 }
 
 .page-content .nav-links a {
     text-decoration: none;
-    font-size: 2.5rem;
+    font-size: 2.5vw;
     color: antiquewhite;
 }
 
@@ -73,14 +86,27 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2.8rem;
     color: #1b1b1b;
+    margin: 0;
 }
 
 .page-content .index-photo-galery {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+}
+
+.arrow-left {
+    width: 3rem;
+}
+
+.arrow-rigth {
+    width: 3rem;
+}
+
+.spacer {
+    height: 10rem;
 }
 
 footer {
@@ -88,6 +114,7 @@ footer {
     color: #8B8B8B;
     text-align: center;
     opacity: 1;
+    width: 100%;
 }
 
 /* Login page */
